@@ -30,10 +30,14 @@ public class DoubleChainedListTest {
 
 	@Test
 	public void testGetPrevious() throws Exception {
+		Assert.assertNull(list.getPrevious());
 		list.insert("foo");
 		list.insert("bar");
 		Assert.assertNull(list.getPrevious());
 		list.goToLast();
+		Assert.assertNull(list.getNext());
+		Assert.assertNull(list.getNext());
+		Assert.assertNull(list.getNext());
 		Assert.assertEquals("foo", list.getPrevious());
 		Assert.assertNull(list.getPrevious());
 	}
