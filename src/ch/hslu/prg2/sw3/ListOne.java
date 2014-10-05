@@ -44,13 +44,13 @@ public class ListOne implements IList {
 	 */
 	public boolean removeValues(int number) {
 		Integer value = new Integer(number);
-		boolean result;
+		boolean numberRemoved = false;
 
-		do {
-			result = list.remove(value);
-		} while(result);
+		while(list.remove(value)) {
+			numberRemoved = true;
+		}
 
-		return result;
+		return numberRemoved;
 	}
 
 	/**
