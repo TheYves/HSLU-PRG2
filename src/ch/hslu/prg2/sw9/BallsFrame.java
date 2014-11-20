@@ -28,7 +28,7 @@ public class BallsFrame extends JFrame {
 				while (it.hasNext()) {
 					Ball ball = (Ball) it.next();
 					if (ball.isVisible()) {
-						ball.paint((Graphics2D) g);
+						ball.paint(g);
 					} else {
 						it.remove();
 					}
@@ -44,7 +44,6 @@ public class BallsFrame extends JFrame {
 			@Override
 			public void mousePressed(MouseEvent mouseEvent) {
 				super.mouseClicked(mouseEvent);
-				System.out.println(mouseEvent.getY());
 				Ball b = new Ball(panel.getHeight(), mouseEvent.getX(), mouseEvent.getY());
 				Thread t = new Thread(b);
 				t.start();

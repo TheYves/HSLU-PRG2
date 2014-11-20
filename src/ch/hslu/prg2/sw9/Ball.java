@@ -32,7 +32,7 @@ public class Ball implements Runnable {
 		this.panelHeight = frameHeight;
 	}
 
-	public void paint(Graphics2D g) {
+	public void paint(Graphics g) {
 		g.setColor(color);
 		g.fillOval(positionX, positionY, size, size);
 	}
