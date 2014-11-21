@@ -1,4 +1,4 @@
-package ch.hslu.prg2.sw9;
+package ch.hslu.prg2.sw9.Ball;
 
 import java.awt.*;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package ch.hslu.prg2.sw9;
+package ch.hslu.prg2.sw9.Ball;
 
 /**
  * Created by Yves Hohl (yves.hohl@stud.hslu.ch) on 20.11.2014.
