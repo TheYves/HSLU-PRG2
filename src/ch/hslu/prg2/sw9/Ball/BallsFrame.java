@@ -33,6 +33,8 @@ public class BallsFrame extends JFrame {
 						it.remove();
 					}
 				}
+				g.setColor(Color.black);
+				g.drawString("Threads: " + balls.size(), 5, 15);
 			}
 		};
 
